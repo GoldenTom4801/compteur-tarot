@@ -1,0 +1,14 @@
+Implémentations :
+- compter les cartes (points)
+- les contrats à faire 
+- les poignées, et misères 
+- faire le graphique (faire les sketch à la main pour savoir les dispositions, voler éventuellement
+
+- se connecter à la base de données SQL
+- avoir le décompte :
+  - parties faites, chutées (quel type...)
+  - le décompte total des points depuis le début
+  - une interface pour rajouter des joueurs 
+  
+ - jouer avec l'IA :
+  - faire apprendre à partir 
