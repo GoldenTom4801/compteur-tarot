@@ -1,0 +1,8 @@
+UICollectionView : pour créer le tableau avec les points :
+https://www.youtube.com/watch?v=AUaRegVfGBk
+
+Il faut créer pour chaque View Controler sa propre fonction pour gérer tous les éléments qui y sont inclus.
+
+Je cherche encore comment changer efficacement de page (Controller)
+
+Voici une possibilité mais je n'ai pas l'impression que ce soit la meilleure : https://www.youtube.com/watch?v=b5dBK2C7QHE
