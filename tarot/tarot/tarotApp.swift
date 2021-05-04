@@ -1,8 +1,8 @@
 //
 //  tarotApp.swift
-//  Shared
+//  tarot
 //
-//  Created by Thomas Loux on 01/05/2021.
+//  Created by Thomas Loux on 04/05/2021.
 //
 
 import SwiftUI
