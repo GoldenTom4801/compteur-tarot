@@ -1,13 +1,13 @@
 //
-//  tarotUITests.swift
-//  tarotUITests
+//  compteur_tarotUITests.swift
+//  compteur-tarotUITests
 //
 //  Created by Thomas Loux on 04/05/2021.
 //
 
 import XCTest
 
-class tarotUITests: XCTestCase {
+class compteur_tarotUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

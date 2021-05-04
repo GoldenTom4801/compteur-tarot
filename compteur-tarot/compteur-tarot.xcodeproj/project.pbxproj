@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADA31A852641CD150050B44E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31A842641CD150050B44E /* AppDelegate.swift */; };
+		ADA31A872641CD160050B44E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31A862641CD160050B44E /* SceneDelegate.swift */; };
+		ADA31A892641CD160050B44E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31A882641CD160050B44E /* ViewController.swift */; };
+		ADA31A8C2641CD160050B44E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA31A8A2641CD160050B44E /* Main.storyboard */; };
+		ADA31A8E2641CD1D0050B44E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA31A8D2641CD1D0050B44E /* Assets.xcassets */; };
+		ADA31A912641CD1D0050B44E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA31A8F2641CD1D0050B44E /* LaunchScreen.storyboard */; };
+		ADA31A9C2641CD1E0050B44E /* compteur_tarotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31A9B2641CD1E0050B44E /* compteur_tarotTests.swift */; };
+		ADA31AA72641CD1E0050B44E /* compteur_tarotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31AA62641CD1E0050B44E /* compteur_tarotUITests.swift */; };
+		ADA31AB52641CF950050B44E /* PlayerSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31AB42641CF950050B44E /* PlayerSelectionController.swift */; };
+		ADA31AB72641CFAC0050B44E /* ScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31AB62641CFAC0050B44E /* ScoreController.swift */; };
+		ADA31ABA2641E7250050B44E /* GameOutputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31AB82641E7250050B44E /* GameOutputCell.swift */; };
+		ADA31ABB2641E7250050B44E /* GameOutputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADA31AB92641E7250050B44E /* GameOutputCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADA31A982641CD1E0050B44E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADA31A792641CD150050B44E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADA31A802641CD150050B44E;
+			remoteInfo = "compteur-tarot";
+		};
+		ADA31AA32641CD1E0050B44E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADA31A792641CD150050B44E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADA31A802641CD150050B44E;
+			remoteInfo = "compteur-tarot";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADA31A812641CD150050B44E /* compteur-tarot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "compteur-tarot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA31A842641CD150050B44E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADA31A862641CD160050B44E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ADA31A882641CD160050B44E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADA31A8B2641CD160050B44E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADA31A8D2641CD1D0050B44E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADA31A902641CD1D0050B44E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADA31A922641CD1D0050B44E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA31A972641CD1E0050B44E /* compteur-tarotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "compteur-tarotTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA31A9B2641CD1E0050B44E /* compteur_tarotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = compteur_tarotTests.swift; sourceTree = "<group>"; };
+		ADA31A9D2641CD1E0050B44E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA31AA22641CD1E0050B44E /* compteur-tarotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "compteur-tarotUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA31AA62641CD1E0050B44E /* compteur_tarotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = compteur_tarotUITests.swift; sourceTree = "<group>"; };
+		ADA31AA82641CD1E0050B44E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA31AB42641CF950050B44E /* PlayerSelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSelectionController.swift; sourceTree = "<group>"; };
+		ADA31AB62641CFAC0050B44E /* ScoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreController.swift; sourceTree = "<group>"; };
+		ADA31AB82641E7250050B44E /* GameOutputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOutputCell.swift; sourceTree = "<group>"; };
+		ADA31AB92641E7250050B44E /* GameOutputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameOutputCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADA31A7E2641CD150050B44E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA31A942641CD1E0050B44E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA31A9F2641CD1E0050B44E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADA31A782641CD150050B44E = {
+			isa = PBXGroup;
+			children = (
+				ADA31A832641CD150050B44E /* compteur-tarot */,
+				ADA31A9A2641CD1E0050B44E /* compteur-tarotTests */,
+				ADA31AA52641CD1E0050B44E /* compteur-tarotUITests */,
+				ADA31A822641CD150050B44E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADA31A822641CD150050B44E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADA31A812641CD150050B44E /* compteur-tarot.app */,
+				ADA31A972641CD1E0050B44E /* compteur-tarotTests.xctest */,
+				ADA31AA22641CD1E0050B44E /* compteur-tarotUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADA31A832641CD150050B44E /* compteur-tarot */ = {
+			isa = PBXGroup;
+			children = (
+				ADA31A842641CD150050B44E /* AppDelegate.swift */,
+				ADA31A862641CD160050B44E /* SceneDelegate.swift */,
+				ADA31A882641CD160050B44E /* ViewController.swift */,
+				ADA31AB42641CF950050B44E /* PlayerSelectionController.swift */,
+				ADA31AB62641CFAC0050B44E /* ScoreController.swift */,
+				ADA31AB82641E7250050B44E /* GameOutputCell.swift */,
+				ADA31AB92641E7250050B44E /* GameOutputCell.xib */,
+				ADA31A8A2641CD160050B44E /* Main.storyboard */,
+				ADA31A8D2641CD1D0050B44E /* Assets.xcassets */,
+				ADA31A8F2641CD1D0050B44E /* LaunchScreen.storyboard */,
+				ADA31A922641CD1D0050B44E /* Info.plist */,
+			);
+			path = "compteur-tarot";
+			sourceTree = "<group>";
+		};
+		ADA31A9A2641CD1E0050B44E /* compteur-tarotTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADA31A9B2641CD1E0050B44E /* compteur_tarotTests.swift */,
+				ADA31A9D2641CD1E0050B44E /* Info.plist */,
+			);
+			path = "compteur-tarotTests";
+			sourceTree = "<group>";
+		};
+		ADA31AA52641CD1E0050B44E /* compteur-tarotUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADA31AA62641CD1E0050B44E /* compteur_tarotUITests.swift */,
+				ADA31AA82641CD1E0050B44E /* Info.plist */,
+			);
+			path = "compteur-tarotUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADA31A802641CD150050B44E /* compteur-tarot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA31AAB2641CD1E0050B44E /* Build configuration list for PBXNativeTarget "compteur-tarot" */;
+			buildPhases = (
+				ADA31A7D2641CD150050B44E /* Sources */,
+				ADA31A7E2641CD150050B44E /* Frameworks */,
+				ADA31A7F2641CD150050B44E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "compteur-tarot";
+			productName = "compteur-tarot";
+			productReference = ADA31A812641CD150050B44E /* compteur-tarot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADA31A962641CD1E0050B44E /* compteur-tarotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA31AAE2641CD1E0050B44E /* Build configuration list for PBXNativeTarget "compteur-tarotTests" */;
+			buildPhases = (
+				ADA31A932641CD1E0050B44E /* Sources */,
+				ADA31A942641CD1E0050B44E /* Frameworks */,
+				ADA31A952641CD1E0050B44E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADA31A992641CD1E0050B44E /* PBXTargetDependency */,
+			);
+			name = "compteur-tarotTests";
+			productName = "compteur-tarotTests";
+			productReference = ADA31A972641CD1E0050B44E /* compteur-tarotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADA31AA12641CD1E0050B44E /* compteur-tarotUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA31AB12641CD1E0050B44E /* Build configuration list for PBXNativeTarget "compteur-tarotUITests" */;
+			buildPhases = (
+				ADA31A9E2641CD1E0050B44E /* Sources */,
+				ADA31A9F2641CD1E0050B44E /* Frameworks */,
+				ADA31AA02641CD1E0050B44E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADA31AA42641CD1E0050B44E /* PBXTargetDependency */,
+			);
+			name = "compteur-tarotUITests";
+			productName = "compteur-tarotUITests";
+			productReference = ADA31AA22641CD1E0050B44E /* compteur-tarotUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADA31A792641CD150050B44E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					ADA31A802641CD150050B44E = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					ADA31A962641CD1E0050B44E = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = ADA31A802641CD150050B44E;
+					};
+					ADA31AA12641CD1E0050B44E = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = ADA31A802641CD150050B44E;
+					};
+				};
+			};
+			buildConfigurationList = ADA31A7C2641CD150050B44E /* Build configuration list for PBXProject "compteur-tarot" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADA31A782641CD150050B44E;
+			productRefGroup = ADA31A822641CD150050B44E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADA31A802641CD150050B44E /* compteur-tarot */,
+				ADA31A962641CD1E0050B44E /* compteur-tarotTests */,
+				ADA31AA12641CD1E0050B44E /* compteur-tarotUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADA31A7F2641CD150050B44E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA31A912641CD1D0050B44E /* LaunchScreen.storyboard in Resources */,
+				ADA31A8E2641CD1D0050B44E /* Assets.xcassets in Resources */,
+				ADA31ABB2641E7250050B44E /* GameOutputCell.xib in Resources */,
+				ADA31A8C2641CD160050B44E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA31A952641CD1E0050B44E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA31AA02641CD1E0050B44E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADA31A7D2641CD150050B44E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA31AB72641CFAC0050B44E /* ScoreController.swift in Sources */,
+				ADA31A892641CD160050B44E /* ViewController.swift in Sources */,
+				ADA31AB52641CF950050B44E /* PlayerSelectionController.swift in Sources */,
+				ADA31A852641CD150050B44E /* AppDelegate.swift in Sources */,
+				ADA31ABA2641E7250050B44E /* GameOutputCell.swift in Sources */,
+				ADA31A872641CD160050B44E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA31A932641CD1E0050B44E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA31A9C2641CD1E0050B44E /* compteur_tarotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA31A9E2641CD1E0050B44E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA31AA72641CD1E0050B44E /* compteur_tarotUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADA31A992641CD1E0050B44E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADA31A802641CD150050B44E /* compteur-tarot */;
+			targetProxy = ADA31A982641CD1E0050B44E /* PBXContainerItemProxy */;
+		};
+		ADA31AA42641CD1E0050B44E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADA31A802641CD150050B44E /* compteur-tarot */;
+			targetProxy = ADA31AA32641CD1E0050B44E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADA31A8A2641CD160050B44E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADA31A8B2641CD160050B44E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADA31A8F2641CD1D0050B44E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADA31A902641CD1D0050B44E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADA31AA92641CD1E0050B44E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADA31AAA2641CD1E0050B44E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADA31AAC2641CD1E0050B44E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "compteur-tarot/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "prepa.compteur-tarot";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADA31AAD2641CD1E0050B44E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "compteur-tarot/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "prepa.compteur-tarot";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ADA31AAF2641CD1E0050B44E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "compteur-tarotTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "prepa.compteur-tarotTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/compteur-tarot.app/compteur-tarot";
+			};
+			name = Debug;
+		};
+		ADA31AB02641CD1E0050B44E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "compteur-tarotTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "prepa.compteur-tarotTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/compteur-tarot.app/compteur-tarot";
+			};
+			name = Release;
+		};
+		ADA31AB22641CD1E0050B44E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "compteur-tarotUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "prepa.compteur-tarotUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "compteur-tarot";
+			};
+			name = Debug;
+		};
+		ADA31AB32641CD1E0050B44E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "compteur-tarotUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "prepa.compteur-tarotUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "compteur-tarot";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADA31A7C2641CD150050B44E /* Build configuration list for PBXProject "compteur-tarot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA31AA92641CD1E0050B44E /* Debug */,
+				ADA31AAA2641CD1E0050B44E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADA31AAB2641CD1E0050B44E /* Build configuration list for PBXNativeTarget "compteur-tarot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA31AAC2641CD1E0050B44E /* Debug */,
+				ADA31AAD2641CD1E0050B44E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADA31AAE2641CD1E0050B44E /* Build configuration list for PBXNativeTarget "compteur-tarotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA31AAF2641CD1E0050B44E /* Debug */,
+				ADA31AB02641CD1E0050B44E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADA31AB12641CD1E0050B44E /* Build configuration list for PBXNativeTarget "compteur-tarotUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA31AB22641CD1E0050B44E /* Debug */,
+				ADA31AB32641CD1E0050B44E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADA31A792641CD150050B44E /* Project object */;
+}
