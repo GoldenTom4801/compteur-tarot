@@ -18,7 +18,7 @@ class PlayerSelectionController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc  = segue.destination as? ScoreController {
-            vc?.nb_players =
+            //vc?.nb_players =
         }
     }
     

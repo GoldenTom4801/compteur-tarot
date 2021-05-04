@@ -38,7 +38,7 @@ extension ScoreController: UICollectionViewDataSource {
     } // Permet de spécifier le nombre de cases voulues
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GameOutputCell.identifier, for: indexPath) as! GameOutputCell
-        cell.configure(with: ScoreController.joueur1)
+        cell.configure(with: "Moi")
         return cell
     } // Afficher pour chaque case
 }

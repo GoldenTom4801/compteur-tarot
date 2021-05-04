@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="USj-Ze-GGE">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="compteur_tarot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="compteur_tarot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,26 +32,43 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFg-ze-9Dj">
                                                 <rect key="frame" x="0.0" y="0.0" width="140" height="30"/>
                                                 <state key="normal" title="3 Joueurs"/>
+                                                <connections>
+                                                    <action selector="three_players:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J9B-Mu-q9l"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AE1-D5-PcG">
                                                 <rect key="frame" x="0.0" y="30" width="140" height="30"/>
                                                 <state key="normal" title="4 Joueurs"/>
+                                                <connections>
+                                                    <action selector="four_players:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pog-dE-b8A"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4O-nL-8Pt">
                                                 <rect key="frame" x="0.0" y="60" width="140" height="30"/>
                                                 <state key="normal" title="5 Joueurs"/>
+                                                <connections>
+                                                    <action selector="five_players:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w0v-fD-azw"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6BH-TI-Fwb">
                                                 <rect key="frame" x="0.0" y="90" width="140" height="30"/>
                                                 <state key="normal" title="6 Joueurs"/>
                                                 <connections>
-                                                    <segue destination="tyF-mR-fO4" kind="show" id="KkC-gF-Rvs"/>
+                                                    <action selector="six_players:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eP7-Bh-K5V"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6r-po-5Kg">
+                                <rect key="frame" x="196" y="291" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="NUn-wL-ZCe" kind="show" id="G5d-ze-5T4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -59,21 +76,22 @@
                             <constraint firstItem="u0H-SA-QU6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0ka-u6-xE1"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="WqV-95-Qfq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="76"/>
+            <point key="canvasLocation" x="928.98550724637687" y="75.669642857142847"/>
         </scene>
-        <!--Player Selection Controller-->
+        <!--Name Collection Controller-->
         <scene sceneID="Ec2-Ds-vzg">
             <objects>
-                <viewController storyboardIdentifier="playerSelection" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tyF-mR-fO4" customClass="PlayerSelectionController" customModule="compteur_tarot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NameCollectionController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tyF-mR-fO4" customClass="NameCollectionController" customModule="compteur_tarot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HgJ-lR-QGK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="M5S-NX-uuT">
-                                <rect key="frame" x="87" y="114" width="240" height="212.5"/>
+                                <rect key="frame" x="87" y="114" width="240" height="178.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrez les noms des joueurs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFE-3o-AhM">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="20.5"/>
@@ -101,28 +119,11 @@
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yc4-s6-sNI">
-                                        <rect key="frame" x="0.0" y="148.5" width="240" height="34"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="J1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLq-bq-fWz">
-                                                <rect key="frame" x="0.0" y="0.0" width="16.5" height="34"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dPW-7r-rNL">
-                                                <rect key="frame" x="16.5" y="0.0" width="223.5" height="34"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                        </subviews>
-                                    </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoo-vs-sRy">
-                                        <rect key="frame" x="0.0" y="182.5" width="240" height="30"/>
+                                        <rect key="frame" x="0.0" y="148.5" width="240" height="30"/>
                                         <state key="normal" title="Démarrer"/>
                                         <connections>
                                             <action selector="playerNames:" destination="tyF-mR-fO4" eventType="touchUpInside" id="lbb-x4-Xcm"/>
-                                            <segue destination="NUn-wL-ZCe" kind="show" id="dUx-qM-DaO"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -136,18 +137,18 @@
                     </view>
                     <navigationItem key="navigationItem" id="nsR-yk-T7P"/>
                     <connections>
-                        <outlet property="joueur1" destination="dPW-7r-rNL" id="jz8-Kd-BWw"/>
+                        <outlet property="collectionView" destination="gdc-8L-qxm" id="0fj-5D-aKO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbv-HB-Sbz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="952" y="-249"/>
+            <point key="canvasLocation" x="1734.7826086956522" y="75.669642857142847"/>
         </scene>
         <!--Score Controller-->
         <scene sceneID="jQx-GO-rl4">
             <objects>
                 <viewController storyboardIdentifier="score" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NUn-wL-ZCe" customClass="ScoreController" customModule="compteur_tarot" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="da7-dX-M8L" customClass="ScoreControler">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="da7-dX-M8L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -175,7 +176,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mmh-9J-EaR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2164" y="76"/>
+            <point key="canvasLocation" x="2567" y="76"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DFk-I2-aKs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="USj-Ze-GGE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rho-7L-4H1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oEG-Qs-WKt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jfv-qA-K4y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="75.669642857142847"/>
         </scene>
     </scenes>
     <resources>

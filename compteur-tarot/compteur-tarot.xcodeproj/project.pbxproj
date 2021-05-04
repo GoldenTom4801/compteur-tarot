@@ -15,10 +15,12 @@
 		ADA31A912641CD1D0050B44E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA31A8F2641CD1D0050B44E /* LaunchScreen.storyboard */; };
 		ADA31A9C2641CD1E0050B44E /* compteur_tarotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31A9B2641CD1E0050B44E /* compteur_tarotTests.swift */; };
 		ADA31AA72641CD1E0050B44E /* compteur_tarotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31AA62641CD1E0050B44E /* compteur_tarotUITests.swift */; };
-		ADA31AB52641CF950050B44E /* PlayerSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31AB42641CF950050B44E /* PlayerSelectionController.swift */; };
 		ADA31AB72641CFAC0050B44E /* ScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31AB62641CFAC0050B44E /* ScoreController.swift */; };
 		ADA31ABA2641E7250050B44E /* GameOutputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31AB82641E7250050B44E /* GameOutputCell.swift */; };
 		ADA31ABB2641E7250050B44E /* GameOutputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADA31AB92641E7250050B44E /* GameOutputCell.xib */; };
+		ADA31AC2264202860050B44E /* PlayerNameInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31AC0264202860050B44E /* PlayerNameInput.swift */; };
+		ADA31AC3264202860050B44E /* PlayerNameInput.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADA31AC1264202860050B44E /* PlayerNameInput.xib */; };
+		ADA31AC5264202F50050B44E /* NameCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31AC4264202F50050B44E /* NameCollectionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +55,12 @@
 		ADA31AA22641CD1E0050B44E /* compteur-tarotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "compteur-tarotUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA31AA62641CD1E0050B44E /* compteur_tarotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = compteur_tarotUITests.swift; sourceTree = "<group>"; };
 		ADA31AA82641CD1E0050B44E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADA31AB42641CF950050B44E /* PlayerSelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSelectionController.swift; sourceTree = "<group>"; };
 		ADA31AB62641CFAC0050B44E /* ScoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreController.swift; sourceTree = "<group>"; };
 		ADA31AB82641E7250050B44E /* GameOutputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOutputCell.swift; sourceTree = "<group>"; };
 		ADA31AB92641E7250050B44E /* GameOutputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameOutputCell.xib; sourceTree = "<group>"; };
+		ADA31AC0264202860050B44E /* PlayerNameInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNameInput.swift; sourceTree = "<group>"; };
+		ADA31AC1264202860050B44E /* PlayerNameInput.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerNameInput.xib; sourceTree = "<group>"; };
+		ADA31AC4264202F50050B44E /* NameCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCollectionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,14 +111,12 @@
 		ADA31A832641CD150050B44E /* compteur-tarot */ = {
 			isa = PBXGroup;
 			children = (
+				ADA31A8A2641CD160050B44E /* Main.storyboard */,
+				ADA31ABF2641FA390050B44E /* Accueil */,
+				ADA31ABC2641F9980050B44E /* Player_selection */,
+				ADA31ABD2641F9FF0050B44E /* Score */,
 				ADA31A842641CD150050B44E /* AppDelegate.swift */,
 				ADA31A862641CD160050B44E /* SceneDelegate.swift */,
-				ADA31A882641CD160050B44E /* ViewController.swift */,
-				ADA31AB42641CF950050B44E /* PlayerSelectionController.swift */,
-				ADA31AB62641CFAC0050B44E /* ScoreController.swift */,
-				ADA31AB82641E7250050B44E /* GameOutputCell.swift */,
-				ADA31AB92641E7250050B44E /* GameOutputCell.xib */,
-				ADA31A8A2641CD160050B44E /* Main.storyboard */,
 				ADA31A8D2641CD1D0050B44E /* Assets.xcassets */,
 				ADA31A8F2641CD1D0050B44E /* LaunchScreen.storyboard */,
 				ADA31A922641CD1D0050B44E /* Info.plist */,
@@ -138,6 +140,34 @@
 				ADA31AA82641CD1E0050B44E /* Info.plist */,
 			);
 			path = "compteur-tarotUITests";
+			sourceTree = "<group>";
+		};
+		ADA31ABC2641F9980050B44E /* Player_selection */ = {
+			isa = PBXGroup;
+			children = (
+				ADA31AC4264202F50050B44E /* NameCollectionController.swift */,
+				ADA31AC0264202860050B44E /* PlayerNameInput.swift */,
+				ADA31AC1264202860050B44E /* PlayerNameInput.xib */,
+			);
+			path = Player_selection;
+			sourceTree = "<group>";
+		};
+		ADA31ABD2641F9FF0050B44E /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				ADA31AB62641CFAC0050B44E /* ScoreController.swift */,
+				ADA31AB82641E7250050B44E /* GameOutputCell.swift */,
+				ADA31AB92641E7250050B44E /* GameOutputCell.xib */,
+			);
+			path = Score;
+			sourceTree = "<group>";
+		};
+		ADA31ABF2641FA390050B44E /* Accueil */ = {
+			isa = PBXGroup;
+			children = (
+				ADA31A882641CD160050B44E /* ViewController.swift */,
+			);
+			path = Accueil;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +277,7 @@
 				ADA31A8E2641CD1D0050B44E /* Assets.xcassets in Resources */,
 				ADA31ABB2641E7250050B44E /* GameOutputCell.xib in Resources */,
 				ADA31A8C2641CD160050B44E /* Main.storyboard in Resources */,
+				ADA31AC3264202860050B44E /* PlayerNameInput.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,9 +302,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA31AC2264202860050B44E /* PlayerNameInput.swift in Sources */,
 				ADA31AB72641CFAC0050B44E /* ScoreController.swift in Sources */,
+				ADA31AC5264202F50050B44E /* NameCollectionController.swift in Sources */,
 				ADA31A892641CD160050B44E /* ViewController.swift in Sources */,
-				ADA31AB52641CF950050B44E /* PlayerSelectionController.swift in Sources */,
 				ADA31A852641CD150050B44E /* AppDelegate.swift in Sources */,
 				ADA31ABA2641E7250050B44E /* GameOutputCell.swift in Sources */,
 				ADA31A872641CD160050B44E /* SceneDelegate.swift in Sources */,
