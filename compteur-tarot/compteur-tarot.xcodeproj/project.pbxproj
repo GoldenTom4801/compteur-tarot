@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD5969EF26427FAC004331D6 /* memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5969EE26427FAC004331D6 /* memory.swift */; };
+		AD5969F626428430004331D6 /* personnal_score.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5969F426428430004331D6 /* personnal_score.swift */; };
+		AD5969F926428531004331D6 /* personnal_score.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD5969F826428531004331D6 /* personnal_score.storyboard */; };
+		AD5969FC26428980004331D6 /* player_choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5969FB26428980004331D6 /* player_choice.swift */; };
 		ADA31A852641CD150050B44E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31A842641CD150050B44E /* AppDelegate.swift */; };
 		ADA31A872641CD160050B44E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31A862641CD160050B44E /* SceneDelegate.swift */; };
 		ADA31A892641CD160050B44E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31A882641CD160050B44E /* ViewController.swift */; };
@@ -41,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD5969EE26427FAC004331D6 /* memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memory.swift; sourceTree = "<group>"; };
+		AD5969F426428430004331D6 /* personnal_score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personnal_score.swift; sourceTree = "<group>"; };
+		AD5969F826428531004331D6 /* personnal_score.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = personnal_score.storyboard; sourceTree = "<group>"; };
+		AD5969FB26428980004331D6 /* player_choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = player_choice.swift; sourceTree = "<group>"; };
 		ADA31A812641CD150050B44E /* compteur-tarot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "compteur-tarot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA31A842641CD150050B44E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADA31A862641CD160050B44E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +96,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD5969EC26427F80004331D6 /* Intern Memory */ = {
+			isa = PBXGroup;
+			children = (
+				AD5969EE26427FAC004331D6 /* memory.swift */,
+			);
+			path = "Intern Memory";
+			sourceTree = "<group>";
+		};
+		AD5969ED26427F8C004331D6 /* Database connection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Database connection";
+			sourceTree = "<group>";
+		};
+		AD5969F0264283BF004331D6 /* personnal_data */ = {
+			isa = PBXGroup;
+			children = (
+				AD5969FA26428956004331D6 /* player_choice */,
+				AD5969F426428430004331D6 /* personnal_score.swift */,
+				AD5969F826428531004331D6 /* personnal_score.storyboard */,
+			);
+			path = personnal_data;
+			sourceTree = "<group>";
+		};
+		AD5969F2264283DB004331D6 /* Front_end */ = {
+			isa = PBXGroup;
+			children = (
+				AD5969ED26427F8C004331D6 /* Database connection */,
+				AD5969EC26427F80004331D6 /* Intern Memory */,
+			);
+			path = Front_end;
+			sourceTree = "<group>";
+		};
+		AD5969F3264283E2004331D6 /* Back_end */ = {
+			isa = PBXGroup;
+			children = (
+				ADA31A8A2641CD160050B44E /* Main.storyboard */,
+				AD5969F0264283BF004331D6 /* personnal_data */,
+				ADA31ABF2641FA390050B44E /* Accueil */,
+				ADA31ABC2641F9980050B44E /* Player_selection */,
+				ADA31ABD2641F9FF0050B44E /* Score */,
+			);
+			path = Back_end;
+			sourceTree = "<group>";
+		};
+		AD5969FA26428956004331D6 /* player_choice */ = {
+			isa = PBXGroup;
+			children = (
+				AD5969FB26428980004331D6 /* player_choice.swift */,
+			);
+			path = player_choice;
+			sourceTree = "<group>";
+		};
 		ADA31A782641CD150050B44E = {
 			isa = PBXGroup;
 			children = (
@@ -111,10 +173,8 @@
 		ADA31A832641CD150050B44E /* compteur-tarot */ = {
 			isa = PBXGroup;
 			children = (
-				ADA31A8A2641CD160050B44E /* Main.storyboard */,
-				ADA31ABF2641FA390050B44E /* Accueil */,
-				ADA31ABC2641F9980050B44E /* Player_selection */,
-				ADA31ABD2641F9FF0050B44E /* Score */,
+				AD5969F3264283E2004331D6 /* Back_end */,
+				AD5969F2264283DB004331D6 /* Front_end */,
 				ADA31A842641CD150050B44E /* AppDelegate.swift */,
 				ADA31A862641CD160050B44E /* SceneDelegate.swift */,
 				ADA31A8D2641CD1D0050B44E /* Assets.xcassets */,
@@ -277,6 +337,7 @@
 				ADA31A8E2641CD1D0050B44E /* Assets.xcassets in Resources */,
 				ADA31ABB2641E7250050B44E /* GameOutputCell.xib in Resources */,
 				ADA31A8C2641CD160050B44E /* Main.storyboard in Resources */,
+				AD5969F926428531004331D6 /* personnal_score.storyboard in Resources */,
 				ADA31AC3264202860050B44E /* PlayerNameInput.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,13 +363,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD5969EF26427FAC004331D6 /* memory.swift in Sources */,
 				ADA31AC2264202860050B44E /* PlayerNameInput.swift in Sources */,
 				ADA31AB72641CFAC0050B44E /* ScoreController.swift in Sources */,
 				ADA31AC5264202F50050B44E /* NameCollectionController.swift in Sources */,
 				ADA31A892641CD160050B44E /* ViewController.swift in Sources */,
+				AD5969F626428430004331D6 /* personnal_score.swift in Sources */,
 				ADA31A852641CD150050B44E /* AppDelegate.swift in Sources */,
 				ADA31ABA2641E7250050B44E /* GameOutputCell.swift in Sources */,
 				ADA31A872641CD160050B44E /* SceneDelegate.swift in Sources */,
+				AD5969FC26428980004331D6 /* player_choice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

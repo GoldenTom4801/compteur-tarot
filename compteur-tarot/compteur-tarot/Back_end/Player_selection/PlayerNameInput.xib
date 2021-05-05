@@ -10,22 +10,26 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PlayerNameInput" customModule="compteur_tarot" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="177" height="128"/>
+            <rect key="frame" x="0.0" y="0.0" width="280" height="119"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="177" height="128"/>
+                <rect key="frame" x="0.0" y="0.0" width="280" height="119"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AvH-m0-dUM">
+                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AvH-m0-dUM">
                         <rect key="frame" x="0.0" y="9" width="177" height="110"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Joueur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgA-GQ-Vrv">
+                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="101"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hfo-G4-RZi">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="101"/>
+                            </pickerView>
+                        </subviews>
                     </stackView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOOOOO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcB-1R-gZN">
-                        <rect key="frame" x="68" y="54" width="74" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
@@ -35,11 +39,12 @@
                 <constraint firstItem="AvH-m0-dUM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="9" id="oUt-t3-7jF"/>
                 <constraint firstItem="AvH-m0-dUM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tDL-du-L8T"/>
             </constraints>
-            <size key="customSize" width="177" height="128"/>
+            <size key="customSize" width="280" height="119"/>
             <connections>
-                <outlet property="label" destination="rcB-1R-gZN" id="qGa-UB-eNN"/>
+                <outlet property="label" destination="IgA-GQ-Vrv" id="J9s-el-CYX"/>
+                <outlet property="pickerView" destination="Hfo-G4-RZi" id="vAo-VR-KQa"/>
             </connections>
-            <point key="canvasLocation" x="171.73913043478262" y="110.49107142857143"/>
+            <point key="canvasLocation" x="246.37681159420291" y="107.47767857142857"/>
         </collectionViewCell>
     </objects>
 </document>
