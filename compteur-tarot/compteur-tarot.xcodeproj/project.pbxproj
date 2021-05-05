@@ -11,6 +11,9 @@
 		AD5969F626428430004331D6 /* personnal_score.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5969F426428430004331D6 /* personnal_score.swift */; };
 		AD5969F926428531004331D6 /* personnal_score.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD5969F826428531004331D6 /* personnal_score.storyboard */; };
 		AD5969FC26428980004331D6 /* player_choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5969FB26428980004331D6 /* player_choice.swift */; };
+		AD596A0026428D8A004331D6 /* game_data.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD5969FF26428D8A004331D6 /* game_data.storyboard */; };
+		AD596A0226428DA3004331D6 /* gameDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD596A0126428DA3004331D6 /* gameDataController.swift */; };
+		AD596A0426428F97004331D6 /* player_choice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD596A0326428F97004331D6 /* player_choice.storyboard */; };
 		ADA31A852641CD150050B44E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31A842641CD150050B44E /* AppDelegate.swift */; };
 		ADA31A872641CD160050B44E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31A862641CD160050B44E /* SceneDelegate.swift */; };
 		ADA31A892641CD160050B44E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31A882641CD160050B44E /* ViewController.swift */; };
@@ -49,6 +52,9 @@
 		AD5969F426428430004331D6 /* personnal_score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personnal_score.swift; sourceTree = "<group>"; };
 		AD5969F826428531004331D6 /* personnal_score.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = personnal_score.storyboard; sourceTree = "<group>"; };
 		AD5969FB26428980004331D6 /* player_choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = player_choice.swift; sourceTree = "<group>"; };
+		AD5969FF26428D8A004331D6 /* game_data.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = game_data.storyboard; sourceTree = "<group>"; };
+		AD596A0126428DA3004331D6 /* gameDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameDataController.swift; sourceTree = "<group>"; };
+		AD596A0326428F97004331D6 /* player_choice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = player_choice.storyboard; sourceTree = "<group>"; };
 		ADA31A812641CD150050B44E /* compteur-tarot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "compteur-tarot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA31A842641CD150050B44E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADA31A862641CD160050B44E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +120,6 @@
 		AD5969F0264283BF004331D6 /* personnal_data */ = {
 			isa = PBXGroup;
 			children = (
-				AD5969FA26428956004331D6 /* player_choice */,
 				AD5969F426428430004331D6 /* personnal_score.swift */,
 				AD5969F826428531004331D6 /* personnal_score.storyboard */,
 			);
@@ -124,8 +129,13 @@
 		AD5969F2264283DB004331D6 /* Front_end */ = {
 			isa = PBXGroup;
 			children = (
-				AD5969ED26427F8C004331D6 /* Database connection */,
-				AD5969EC26427F80004331D6 /* Intern Memory */,
+				ADA31A8A2641CD160050B44E /* Main.storyboard */,
+				AD5969FA26428956004331D6 /* player_choice */,
+				AD5969FE26428D72004331D6 /* Add_game */,
+				AD5969F0264283BF004331D6 /* personnal_data */,
+				ADA31ABF2641FA390050B44E /* Accueil */,
+				ADA31ABC2641F9980050B44E /* Player_selection */,
+				ADA31ABD2641F9FF0050B44E /* Score */,
 			);
 			path = Front_end;
 			sourceTree = "<group>";
@@ -133,11 +143,8 @@
 		AD5969F3264283E2004331D6 /* Back_end */ = {
 			isa = PBXGroup;
 			children = (
-				ADA31A8A2641CD160050B44E /* Main.storyboard */,
-				AD5969F0264283BF004331D6 /* personnal_data */,
-				ADA31ABF2641FA390050B44E /* Accueil */,
-				ADA31ABC2641F9980050B44E /* Player_selection */,
-				ADA31ABD2641F9FF0050B44E /* Score */,
+				AD5969ED26427F8C004331D6 /* Database connection */,
+				AD5969EC26427F80004331D6 /* Intern Memory */,
 			);
 			path = Back_end;
 			sourceTree = "<group>";
@@ -146,8 +153,18 @@
 			isa = PBXGroup;
 			children = (
 				AD5969FB26428980004331D6 /* player_choice.swift */,
+				AD596A0326428F97004331D6 /* player_choice.storyboard */,
 			);
 			path = player_choice;
+			sourceTree = "<group>";
+		};
+		AD5969FE26428D72004331D6 /* Add_game */ = {
+			isa = PBXGroup;
+			children = (
+				AD5969FF26428D8A004331D6 /* game_data.storyboard */,
+				AD596A0126428DA3004331D6 /* gameDataController.swift */,
+			);
+			path = Add_game;
 			sourceTree = "<group>";
 		};
 		ADA31A782641CD150050B44E = {
@@ -292,6 +309,9 @@
 		ADA31A792641CD150050B44E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					0,
+				);
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
@@ -336,8 +356,10 @@
 				ADA31A912641CD1D0050B44E /* LaunchScreen.storyboard in Resources */,
 				ADA31A8E2641CD1D0050B44E /* Assets.xcassets in Resources */,
 				ADA31ABB2641E7250050B44E /* GameOutputCell.xib in Resources */,
+				AD596A0026428D8A004331D6 /* game_data.storyboard in Resources */,
 				ADA31A8C2641CD160050B44E /* Main.storyboard in Resources */,
 				AD5969F926428531004331D6 /* personnal_score.storyboard in Resources */,
+				AD596A0426428F97004331D6 /* player_choice.storyboard in Resources */,
 				ADA31AC3264202860050B44E /* PlayerNameInput.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +389,7 @@
 				ADA31AC2264202860050B44E /* PlayerNameInput.swift in Sources */,
 				ADA31AB72641CFAC0050B44E /* ScoreController.swift in Sources */,
 				ADA31AC5264202F50050B44E /* NameCollectionController.swift in Sources */,
+				AD596A0226428DA3004331D6 /* gameDataController.swift in Sources */,
 				ADA31A892641CD160050B44E /* ViewController.swift in Sources */,
 				AD5969F626428430004331D6 /* personnal_score.swift in Sources */,
 				ADA31A852641CD150050B44E /* AppDelegate.swift in Sources */,

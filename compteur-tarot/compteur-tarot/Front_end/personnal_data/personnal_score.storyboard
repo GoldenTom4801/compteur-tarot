@@ -23,7 +23,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="135" height="30"/>
                                         <state key="normal" title="Choisir le joueur"/>
                                         <connections>
-                                            <segue destination="9mr-0a-f80" kind="presentation" id="voN-tz-UG3"/>
+                                            <segue destination="Zq5-8o-6NB" kind="presentation" id="5MW-31-7if"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vous avez choisi :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgw-dv-FMe">
@@ -50,30 +50,13 @@
             </objects>
             <point key="canvasLocation" x="29" y="94"/>
         </scene>
-        <!--Player choice-->
-        <scene sceneID="p6a-vb-G4d">
+        <!--player_choice-->
+        <scene sceneID="fX6-kd-cCF">
             <objects>
-                <viewController id="9mr-0a-f80" customClass="player_choice" customModule="compteur_tarot" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="887-ap-47q">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Oj-Jz-PgM">
-                                <rect key="frame" x="0.0" y="86" width="414" height="484"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="AZq-sl-aKq"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="uBs-LG-9rp"/>
-                    <connections>
-                        <outlet property="pickerView" destination="5Oj-Jz-PgM" id="pn5-JX-F43"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Is-Is-ZOb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="player_choice" id="Zq5-8o-6NB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QFK-kL-DEn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="862" y="94"/>
+            <point key="canvasLocation" x="908" y="94"/>
         </scene>
     </scenes>
     <resources>

@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="u0H-SA-QU6">
-                                <rect key="frame" x="137" y="125" width="140" height="170.5"/>
+                                <rect key="frame" x="137" y="125" width="140" height="200.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compteur de tarot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMX-El-8wW">
                                         <rect key="frame" x="0.0" y="0.0" width="140" height="20.5"/>
@@ -27,7 +27,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sah-o5-MCY">
-                                        <rect key="frame" x="0.0" y="20.5" width="140" height="150"/>
+                                        <rect key="frame" x="0.0" y="20.5" width="140" height="180"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFg-ze-9Dj">
                                                 <rect key="frame" x="0.0" y="0.0" width="140" height="30"/>
@@ -62,6 +62,13 @@
                                                 <state key="normal" title="Skip affichage"/>
                                                 <connections>
                                                     <segue destination="NUn-wL-ZCe" kind="show" id="G5d-ze-5T4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q49-h4-Tvc">
+                                                <rect key="frame" x="0.0" y="150" width="140" height="30"/>
+                                                <state key="normal" title="Ajouter une partie"/>
+                                                <connections>
+                                                    <segue destination="Lnp-lq-Csa" kind="show" id="K69-5Y-5rh"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -102,7 +109,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MUR-eH-Ki1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="670" y="643"/>
+            <point key="canvasLocation" x="930" y="601"/>
+        </scene>
+        <!--game_data-->
+        <scene sceneID="Qih-6A-xYB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="game_data" id="Lnp-lq-Csa" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7NF-ag-GlN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sf8-I0-RzW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1424" y="600"/>
         </scene>
         <!--Name Collection Controller-->
         <scene sceneID="Ec2-Ds-vzg">

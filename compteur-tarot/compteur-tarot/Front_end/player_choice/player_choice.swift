@@ -11,8 +11,11 @@ class player_choice: UIViewController {
 
     
     @IBOutlet weak var pickerView: UIPickerView!
-    var delegate: personnal_score?
-    var players: [String] = []
+    
+    var delegate: choix_du_joueur?
+    var data: [String] = []
+    var tag: Int = -1 // Permet de savoir qui a appelé le sélecteur
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         pickerView.delegate = self
@@ -26,14 +29,14 @@ class player_choice: UIViewController {
         }
         
         func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-            return players.count
+            return data.count
         }
         func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-            return players[row]
+            return data[row]
         }
         func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
             if let head = delegate {
-                head.choix(nb: row)
+                head.choix(nb: row, tag: tag)
             }
             self.dismiss(animated: true, completion: nil)
         }
@@ -41,5 +44,5 @@ class player_choice: UIViewController {
 }
 
 protocol choix_du_joueur {
-    func choix(nb: Int)
+    func choix(nb: Int, tag: Int) 
 }
