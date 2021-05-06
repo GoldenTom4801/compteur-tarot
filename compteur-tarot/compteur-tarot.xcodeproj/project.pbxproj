@@ -14,6 +14,7 @@
 		AD596A0026428D8A004331D6 /* game_data.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD5969FF26428D8A004331D6 /* game_data.storyboard */; };
 		AD596A0226428DA3004331D6 /* gameDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD596A0126428DA3004331D6 /* gameDataController.swift */; };
 		AD596A0426428F97004331D6 /* player_choice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD596A0326428F97004331D6 /* player_choice.storyboard */; };
+		AD596A062642D43B004331D6 /* type_declaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD596A052642D43B004331D6 /* type_declaration.swift */; };
 		ADA31A852641CD150050B44E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31A842641CD150050B44E /* AppDelegate.swift */; };
 		ADA31A872641CD160050B44E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31A862641CD160050B44E /* SceneDelegate.swift */; };
 		ADA31A892641CD160050B44E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA31A882641CD160050B44E /* ViewController.swift */; };
@@ -55,6 +56,7 @@
 		AD5969FF26428D8A004331D6 /* game_data.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = game_data.storyboard; sourceTree = "<group>"; };
 		AD596A0126428DA3004331D6 /* gameDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameDataController.swift; sourceTree = "<group>"; };
 		AD596A0326428F97004331D6 /* player_choice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = player_choice.storyboard; sourceTree = "<group>"; };
+		AD596A052642D43B004331D6 /* type_declaration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = type_declaration.swift; sourceTree = "<group>"; };
 		ADA31A812641CD150050B44E /* compteur-tarot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "compteur-tarot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA31A842641CD150050B44E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADA31A862641CD160050B44E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				AD5969EE26427FAC004331D6 /* memory.swift */,
+				AD596A052642D43B004331D6 /* type_declaration.swift */,
 			);
 			path = "Intern Memory";
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 		AD5969F2264283DB004331D6 /* Front_end */ = {
 			isa = PBXGroup;
 			children = (
+				AD596A072642E256004331D6 /* Add_player */,
 				ADA31A8A2641CD160050B44E /* Main.storyboard */,
 				AD5969FA26428956004331D6 /* player_choice */,
 				AD5969FE26428D72004331D6 /* Add_game */,
@@ -165,6 +169,13 @@
 				AD596A0126428DA3004331D6 /* gameDataController.swift */,
 			);
 			path = Add_game;
+			sourceTree = "<group>";
+		};
+		AD596A072642E256004331D6 /* Add_player */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Add_player;
 			sourceTree = "<group>";
 		};
 		ADA31A782641CD150050B44E = {
@@ -393,6 +404,7 @@
 				ADA31A892641CD160050B44E /* ViewController.swift in Sources */,
 				AD5969F626428430004331D6 /* personnal_score.swift in Sources */,
 				ADA31A852641CD150050B44E /* AppDelegate.swift in Sources */,
+				AD596A062642D43B004331D6 /* type_declaration.swift in Sources */,
 				ADA31ABA2641E7250050B44E /* GameOutputCell.swift in Sources */,
 				ADA31A872641CD160050B44E /* SceneDelegate.swift in Sources */,
 				AD5969FC26428980004331D6 /* player_choice.swift in Sources */,

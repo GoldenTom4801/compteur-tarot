@@ -32,12 +32,12 @@ extension NameCollectionController: UICollectionViewDataSource {
 
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return nb_players
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! PlayerNameInput
-        cell.configure(with: indexPath.item)
+        cell.configure(with: indexPath.item + 1)
         return cell
     }
 }

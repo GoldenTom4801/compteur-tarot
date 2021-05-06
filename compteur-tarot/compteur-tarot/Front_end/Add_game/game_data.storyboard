@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xof-W9-1mk">
-                                <rect key="frame" x="114" y="53" width="186" height="151"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xof-W9-1mk">
+                                <rect key="frame" x="114" y="94" width="186" height="151"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WyF-uh-AtS">
                                         <rect key="frame" x="0.0" y="0.0" width="186" height="30"/>
@@ -120,6 +120,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="xof-W9-1mk" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="DFb-D3-KVB"/>
+                            <constraint firstItem="xof-W9-1mk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="NvQ-rV-oGv"/>
                         </constraints>
                     </view>
                     <connections>

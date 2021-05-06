@@ -8,10 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var donnee: data?
     var nb_players: Int = 5
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        donnee = data()
     }
     
     @IBAction func three_players(_ sender: Any) {

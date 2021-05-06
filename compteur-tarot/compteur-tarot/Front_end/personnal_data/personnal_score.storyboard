@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zyO-C3-wGh">
-                                <rect key="frame" x="139.5" y="771.5" width="135" height="50.5"/>
+                                <rect key="frame" x="139.5" y="94" width="135" height="50.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svD-XH-McC">
                                         <rect key="frame" x="0.0" y="0.0" width="135" height="30"/>
@@ -38,7 +38,7 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="zyO-C3-wGh" secondAttribute="bottom" constant="40" id="Kci-tH-sIt"/>
+                            <constraint firstItem="zyO-C3-wGh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="5o3-p8-cUU"/>
                             <constraint firstItem="zyO-C3-wGh" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="wmg-On-yrw"/>
                         </constraints>
                     </view>
