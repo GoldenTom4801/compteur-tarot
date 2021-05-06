@@ -1,5 +1,5 @@
-/*
 
+/*
 import UIKit
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
@@ -23,6 +23,11 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         guard let image = info[.originalImage] as? UIImage else {return}
 
         imageView.image = image
+        
+        let url = info[.imageURL]
+        let data = try! Data(contentsOf: url as! URL)
+        let imageFromURL = UIImage(data: data)
+ 
         self.dismiss(animated: true, completion: nil)
             
     }
