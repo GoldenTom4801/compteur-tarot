@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import UIKit
 
 struct Joueur: Codable {
     var nom: String
     var key: Int
+    var profil_url: String
 }
 
 //Le String permet à Codable de savoir comment enregistrer les données (ici avec String et le nom déjà existant)
@@ -44,8 +46,8 @@ struct Partie: Codable {
     var bouts: Int
     var petit_au_bout: Bool
     var poignee: Poignee
-    var chlemme: Bool
+    var chelem: Bool
 }
 
-let invite = Joueur(nom: "Invité", key: 0)
+let invite = Joueur(nom: "Invité", key: 0, profil_url: "")
 

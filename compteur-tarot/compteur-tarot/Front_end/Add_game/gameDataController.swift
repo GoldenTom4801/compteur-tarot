@@ -18,9 +18,9 @@ class gameDataController: UIViewController {
     @IBOutlet weak var stackAppel: UIStackView!
     @IBOutlet weak var b_poignee: UIButton!
     
-    var players: [Joueur] = [] // Initialiser lors de l'appel de prepare
+    var players: [Joueur] = [invite, invite] // Initialiser lors de l'appel de prepare
     
-    var partie = Partie(key: -1, nb_joueurs: 0, preneur: invite, appel: invite, points: 0, bouts: 0, petit_au_bout: false, poignee: .non, chlemme: false)
+    var partie = Partie(key: -1, nb_joueurs: 5, preneur: invite, appel: invite, points: 0, bouts: 0, petit_au_bout: false, poignee: .non, chelem: false)
 
 
     
@@ -28,7 +28,7 @@ class gameDataController: UIViewController {
         super.viewDidLoad()
         partie.nb_joueurs = players.count
         if partie.nb_joueurs < 5 { //Enleve s'il n'y a pas d'appel
-            stackAppel.delete(nil)
+            //stackAppel.delete(nil)
         }
     }
     

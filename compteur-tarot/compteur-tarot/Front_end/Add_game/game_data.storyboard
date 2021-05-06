@@ -143,6 +143,9 @@
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72b-Oo-Uxc">
                                                 <rect key="frame" x="61.5" y="0.0" width="124.5" height="30"/>
                                                 <state key="normal" title="Non"/>
+                                                <connections>
+                                                    <segue destination="iJ2-WE-QeU" kind="presentation" id="0C7-zE-seq"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
