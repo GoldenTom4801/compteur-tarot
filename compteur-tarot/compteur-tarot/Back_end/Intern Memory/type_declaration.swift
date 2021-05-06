@@ -18,6 +18,21 @@ enum Poignee: String, Codable {
     case simple
     case double
     case triple
+    
+    static func to_poignee(nb: Int) -> Poignee {
+        switch nb {
+        case 0:
+            return .non
+        case 1:
+            return .simple
+        case 2:
+            return .double
+        case 3:
+            return .triple
+        default:
+            return .non
+        }
+    }
 }
 
 struct Partie: Codable {
@@ -26,8 +41,11 @@ struct Partie: Codable {
     var preneur: Joueur
     var appel: Joueur?
     var points: Int
+    var bouts: Int
     var petit_au_bout: Bool
     var poignee: Poignee
     var chlemme: Bool
 }
+
+let invite = Joueur(nom: "Invité", key: 0)
 

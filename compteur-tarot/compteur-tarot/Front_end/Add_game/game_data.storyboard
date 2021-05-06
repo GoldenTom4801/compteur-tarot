@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xof-W9-1mk">
-                                <rect key="frame" x="114" y="94" width="186" height="151"/>
+                                <rect key="frame" x="114" y="94" width="186" height="212"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WyF-uh-AtS">
                                         <rect key="frame" x="0.0" y="0.0" width="186" height="30"/>
@@ -113,6 +113,39 @@
                                             </segmentedControl>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zKt-l8-34T">
+                                        <rect key="frame" x="0.0" y="151" width="186" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chelem " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMZ-j0-IzT">
+                                                <rect key="frame" x="0.0" y="0.0" width="62.5" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cCR-10-vC0">
+                                                <rect key="frame" x="62.5" y="0.0" width="123.5" height="32"/>
+                                                <segments>
+                                                    <segment title="Oui"/>
+                                                    <segment title="Non"/>
+                                                </segments>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18w-YB-Zkc">
+                                        <rect key="frame" x="0.0" y="182" width="186" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poignée" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxm-QM-KYd">
+                                                <rect key="frame" x="0.0" y="0.0" width="61.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72b-Oo-Uxc">
+                                                <rect key="frame" x="61.5" y="0.0" width="124.5" height="30"/>
+                                                <state key="normal" title="Non"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -126,6 +159,8 @@
                     <connections>
                         <outlet property="b_appel" destination="TML-Bc-Rle" id="Lju-6M-f3t"/>
                         <outlet property="b_bouts" destination="GsP-W5-yMj" id="Zdc-NR-s9v"/>
+                        <outlet property="b_chelem" destination="cCR-10-vC0" id="4hK-E2-F5l"/>
+                        <outlet property="b_poignee" destination="72b-Oo-Uxc" id="Ojj-A2-4CG"/>
                         <outlet property="b_points" destination="nLQ-iw-qaK" id="iug-9m-JAS"/>
                         <outlet property="b_preneur" destination="Tlg-yq-Efa" id="ryd-wv-aaC"/>
                         <outlet property="petit_bout" destination="4WK-Ka-cbZ" id="fPP-MW-92S"/>

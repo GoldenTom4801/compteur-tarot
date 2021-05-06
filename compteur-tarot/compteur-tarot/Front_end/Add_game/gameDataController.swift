@@ -14,30 +14,29 @@ class gameDataController: UIViewController {
     @IBOutlet weak var b_appel: UIButton!
     @IBOutlet weak var b_points: UIButton!
     @IBOutlet weak var b_bouts: UIButton!
+    @IBOutlet weak var b_chelem: UISegmentedControl!
+    @IBOutlet weak var b_poignee: UIButton!
     
-    var preneur: String = "" // A remplacer plus tard par une primary key
-    var appel: String = ""
-    var points: Int = 0
-    var bouts: Int = 0
-    var petit_au_bout: Bool = false
-    var poignee: Int?
-    var chelem: Bool = false
-
     var players: [String] = get_players()
         // Il faudrait décider quand est-ce qu'on update la base de donnée
         // Et donc qui charge les données et qui les reçoit en prepare
     
+    var partie = Partie(key: -1, nb_joueurs: 0, preneur: invite, appel: invite, points: 0, bouts: 0, petit_au_bout: false, poignee: .non, chlemme: false)
+
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        partie.nb_joueurs = players.count
         
     }
     
     @IBAction func is_petit_au_bout(_ sender: Any) {
         switch petit_bout.selectedSegmentIndex {
         case 0:
-            petit_au_bout = true
+            partie.petit_au_bout = true
         case 1:
-            petit_au_bout = false
+            partie.petit_au_bout = false
         default:
             print("erreur")
         }
@@ -57,6 +56,8 @@ class gameDataController: UIViewController {
             vc.data = (0...91).map { String($0) }
         case 3:
             vc.data = ["0", "1", "2", "3"]
+        case 4:
+            vc.data = [Poignee.non.rawValue,Poignee.simple.rawValue,Poignee.double.rawValue,Poignee.triple.rawValue]
         default:
             print("erreur")
         }
@@ -69,17 +70,21 @@ extension gameDataController: choix_du_joueur {
     func choix(nb: Int, tag: Int) {
         switch tag {
         case 0:
-            preneur = players[nb]
-            b_preneur.setTitle(preneur, for: .normal)
+            partie.preneur = players[nb]
+            b_preneur.setTitle(partie.preneur, for: .normal)
         case 1:
-            appel = players[nb]
-            b_appel.setTitle(appel, for: .normal)
+            partie.appel = players[nb]
+            b_appel.setTitle(partie.appel, for: .normal)
         case 2:
-            points = nb
-            b_points.setTitle(String(points), for: .normal)
+            partie.points = nb
+            b_points.setTitle(String(partie.points), for: .normal)
         case 3:
-            bouts = nb
-            b_bouts.setTitle(String(bouts), for: .normal)
+            partie.bouts = nb
+            b_bouts.setTitle(String(partie.bouts), for: .normal)
+        case 4:
+            partie.poignee = Poignee.to_poignee(nb: nb)
+            b_poignee.setTitle(partie.poignee.rawValue, for: .normal)
+            
         default:
             print("erreur")
         }
