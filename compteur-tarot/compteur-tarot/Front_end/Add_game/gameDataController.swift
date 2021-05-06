@@ -15,11 +15,10 @@ class gameDataController: UIViewController {
     @IBOutlet weak var b_points: UIButton!
     @IBOutlet weak var b_bouts: UIButton!
     @IBOutlet weak var b_chelem: UISegmentedControl!
+    @IBOutlet weak var stackAppel: UIStackView!
     @IBOutlet weak var b_poignee: UIButton!
     
-    var players: [String] = get_players()
-        // Il faudrait décider quand est-ce qu'on update la base de donnée
-        // Et donc qui charge les données et qui les reçoit en prepare
+    var players: [Joueur] = [] // Initialiser lors de l'appel de prepare
     
     var partie = Partie(key: -1, nb_joueurs: 0, preneur: invite, appel: invite, points: 0, bouts: 0, petit_au_bout: false, poignee: .non, chlemme: false)
 
@@ -28,7 +27,9 @@ class gameDataController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         partie.nb_joueurs = players.count
-        
+        if partie.nb_joueurs < 5 { //Enleve s'il n'y a pas d'appel
+            stackAppel.delete(nil)
+        }
     }
     
     @IBAction func is_petit_au_bout(_ sender: Any) {
@@ -51,7 +52,7 @@ class gameDataController: UIViewController {
         vc.tag = sender_tag
         switch sender_tag { // On a précédemment défini des tag dans le storyboard
         case 0, 1:
-            vc.data = players
+            vc.data = players.map {$0.nom}
         case 2:
             vc.data = (0...91).map { String($0) }
         case 3:
@@ -71,10 +72,10 @@ extension gameDataController: choix_du_joueur {
         switch tag {
         case 0:
             partie.preneur = players[nb]
-            b_preneur.setTitle(partie.preneur, for: .normal)
+            b_preneur.setTitle(partie.preneur.nom, for: .normal)
         case 1:
             partie.appel = players[nb]
-            b_appel.setTitle(partie.appel, for: .normal)
+            b_appel.setTitle(partie.appel!.nom, for: .normal)
         case 2:
             partie.points = nb
             b_points.setTitle(String(partie.points), for: .normal)

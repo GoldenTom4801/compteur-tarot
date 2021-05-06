@@ -164,6 +164,7 @@
                         <outlet property="b_points" destination="nLQ-iw-qaK" id="iug-9m-JAS"/>
                         <outlet property="b_preneur" destination="Tlg-yq-Efa" id="ryd-wv-aaC"/>
                         <outlet property="petit_bout" destination="4WK-Ka-cbZ" id="fPP-MW-92S"/>
+                        <outlet property="stackAppel" destination="hJq-q4-n7h" id="DoY-xO-shD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
